@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.App {
+    flex-direction: column;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 10px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    width: 350px;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+
+.card {
+    width: 300px;
+    box-shadow: 0px 2px 11px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: relative;
+    bottom: 0px;
+    margin: 30px auto;
+}
+
+.card:active {
+    box-shadow: none;
+    color: aqua;
+}
+
+.card:hover {
+    bottom: 10px;
+    width: 300px;
+    box-shadow: -15px 15px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transform: translateX(10px);
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.MainContent {
+    margin: 20px;
+}
+
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.product-image img{
+    width: 100%;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+.product-image img:hover{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.header img {
+    width: 50px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1.5px solid black;
+    padding: 5px 15px;
+    border-left: 0;
+    border-right: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+.header p {
+    cursor: pointer;
+}
+
+
+.header p:hover {
+    text-decoration: underline;
+}
+
+
+.Form img {
+    width: 30px;
+    position: absolute;
+    right: 506px;
+    cursor: pointer;
+}
+
+
+.bag_icon {
+    font-size: 30px;
+    color: green;
+}
+
+
+.search-img {
+    font-size: 20px;
+}
